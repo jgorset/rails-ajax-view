@@ -1,6 +1,6 @@
 RailsAjaxView::Application.routes.draw do
   root :to => 'example#home'
-  get '/tab1' => 'example#tab2'
+  get '/tab1' => 'example#tab1'
   get '/tab2' => 'example#tab2'
   get '/tab3' => 'example#tab3'
   get '/tab4' => 'example#tab4'
