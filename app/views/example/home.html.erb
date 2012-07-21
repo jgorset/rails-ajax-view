@@ -1,2 +1,23 @@
-<h1>Example#home</h1>
-<p>Find me in app/views/example/home.html.erb</p>
+<%= ajax_body do %>
+	<div id="block_up" class="border_container full_width_container">
+		<%= ajax_button "button1", button1_path, :target=>"button1_container", :class=>"css_class", :id=>"button_1_id" %>
+		<%= ajax_container :id=>"button1_container", :class => "css_class" do %>
+		<% end %>
+		<%= ajax_container :id=>"button2_container", :class => "css_class" do %>
+		<%= ajax_button "button2", button2_path, :target=>"button2_container", :class=>"css_class", :id=>"button_2_id" %>
+		<% end %>	
+	</div>
+	<div id="block_center" class="border_container full_width_container">
+		<div id="block_left" class="border_container half_width_container">
+			<%= ajax_link "tab1", tab1_path, :class => 'css_class', :id =>'tab1_id', :target=>"tab1_container" %>
+			<%= ajax_container :id=>"tab1_container", :class => "css_class" do %>
+			<% end %>
+		</div>
+		<div id="block_right" class="border_container half_width_container">
+			<%= ajax_link "tab2", tab2_path, :class => 'css_class', :id =>'tab2_id', :target=>"tab2_container" %>
+			<%= ajax_link "tab3", tab3_path, :class => 'css_class', :id =>'tab3_id', :target=>"tab2_container" %>
+			<%= ajax_container :id=>"tab2_container", :class => "css_class" do %>
+			<% end %>
+		</div>
+	</div>
+<% end %>

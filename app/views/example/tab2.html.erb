@@ -1,2 +1,6 @@
-<h1>Example#tab2</h1>
-<p>Find me in app/views/example/tab2.html.erb</p>
+<div id="block_right" class="border_container quarter_width_container">
+	<%= ajax_link "tab4", tab4_path, :class => 'css_class', :id =>'tab4_id', :target=>"tab4_container" %>
+	<%= ajax_link "tab5", tab5_path, :class => 'css_class', :id =>'tab5_id', :target=>"tab5_container" %>
+	<%= ajax_container :id=>"tab4_container", :class => "css_class" do %>
+	<% end %>
+</div>
