@@ -25,7 +25,8 @@ gem 'jquery-rails'
 group :test, :development do
   gem "rspec"
   gem "rspec-rails", "~> 2.4"
-  gem 'capybara'
+  gem "jasminerice"
+  #gem 'jasmine-jquery-rails'
 end
 
 # To use ActiveModel has_secure_password
