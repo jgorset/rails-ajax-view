@@ -26,7 +26,12 @@ group :test, :development do
   gem "rspec"
   gem "rspec-rails", "~> 2.4"
   gem "jasminerice"
-  #gem 'jasmine-jquery-rails'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem "Selenium"
+  gem "selenium-client"
+  gem "selenium-webdriver"
+  gem 'database_cleaner'
 end
 
 # To use ActiveModel has_secure_password
