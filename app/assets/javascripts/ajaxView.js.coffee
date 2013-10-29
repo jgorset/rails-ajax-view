@@ -1,5 +1,5 @@
 #= require ajaxView
-#= require jquery.address-1.4.min
+#= require jquery.address-1.5.sp.min.js
 
 class window.AjaxManager
   constructor: () ->
