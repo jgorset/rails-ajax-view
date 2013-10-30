@@ -25,7 +25,7 @@ gem 'jquery-rails'
 group :test, :development do
   gem "rspec"
   gem "rspec-rails", "~> 2.4"
-  gem "jasminerice"
+  gem "jasminerice", :git => 'https://github.com/bradphelan/jasminerice.git'
   gem 'cucumber-rails'
   gem 'capybara'
   gem "Selenium"
