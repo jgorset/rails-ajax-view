@@ -23,7 +23,9 @@ module AjaxViewHelper
   end
   
   def ajax_body(&block)
-    return (tag("div", {:id => @@ui_body_element_css_class })[0..-1] + capture(&block) + "</div>").html_safe 
+    content_tag "div", id: @@ui_body_element_css_class do
+      yield
+    end
   end
   
   private 
